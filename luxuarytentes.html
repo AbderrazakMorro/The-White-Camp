@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentes de Luxe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .tent-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .tent-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .tent-content {
+            padding: 20px;
+        }
+
+        .tent-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .tent-price {
+            font-size: 18px;
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+
+        .tent-description {
+            margin-bottom: 20px;
+        }
+
+        .tent-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffc107;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .tent-button:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="header-contact">
+            <!-- Informations de contact -->
+            <div class="contact-info">
+                <!-- Material Icons for phone -->
+                <div style="display: flex; flex-wrap: nowrap;" id="header1">
+                    <a href="tel:+212661873469"
+                        style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="material-icons">phone</i> +212 661-873469
+                    </a>
+                    <!-- Material Icons for email -->
+                    <a href="mailto:Thewhitecamp.contact@gmail.com"
+                        style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="material-icons">email</i> Thewhitecamp.contact@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div class="language-selector">
+                <!-- Sélecteur de langue -->
+                <a href="#" class="language-flag">
+                    <img src="https://flagcdn.com/w320/gb.png" alt="English">
+                </a>
+                <a href="#" class="language-flag">
+                    <img src="https://flagcdn.com/w320/es.png" alt="Spanish">
+                </a>
+                <a href="#" class="language-flag">
+                    <img src="https://flagcdn.com/w320/fr.png" alt="French">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logofinal.png" alt="The White Camp" style="height: 20vh; width: auto;margin-top: 2.5vh;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" style="color: white;">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">À propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="luxuarytentes.html">Tentes de luxe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="activities.html">Activités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="gallery.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contactus.html">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="text-align: center; margin-top: 2vh; margin-bottom: 2vh;">
+        <h1>Tentes de Luxe</h1>
+        <p>Nous nous efforçons pour votre confort. Nous espérons que vous apprécierez.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="tent-card">
+                    <img src="image/family-double-tent2.jpg" alt="Familial - Double Tent" class="tent-img">
+                    <div class="tent-content">
+                        <h2 class="tent-title">Familial - Double Tent</h2>
+                        <p class="tent-price">Prix par jour: 1000 MAD</p>
+                        <p class="tent-description">Sahara Desert Luxury Camp propose des tentes de luxe avec un
+                            magnifique mélange de style traditionnel marocain et de décoration contemporaine. Selon vos
+                            goûts, pour vous sentir à l'aise et profiter de votre temps dans le désert.</p>
+                        <a href="contactus.html" class="tent-button">Réserver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="tent-card">
+                    <img src="image/twin-tent4.jpg" alt="Twin Tent" class="tent-img">
+                    <div class="tent-content">
+                        <h2 class="tent-title">Twin Tent</h2>
+                        <p class="tent-price">Prix par jour: 850 MAD</p>
+                        <p class="tent-description">Sahara Desert Luxury Camp propose des tentes de luxe avec un
+                            magnifique mélange de style traditionnel marocain et de décoration contemporaine. Selon vos
+                            goûts, pour vous sentir à l'aise et profiter de votre temps dans le désert.</p>
+                        <a href="contactus.html" class="tent-button">Réserver</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="tent-card">
+                    <img src="image/triple-tent2.jpg" alt="Triple Tent" class="tent-img">
+                    <div class="tent-content">
+                        <h2 class="tent-title">Triple Tent</h2>
+                        <p class="tent-price">Prix par jour: 1200 MAD</p>
+                        <p class="tent-description">Sahara Desert Luxury Camp propose des tentes de luxe avec un
+                            magnifique mélange de style traditionnel marocain et de décoration contemporaine. Selon vos
+                            goûts, pour vous sentir à l'aise et profiter de votre séjour dans le désert.</p>
+                        <a href="contactus.html" class="tent-button">Réserver</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-left">
+                    <img src="logofinal.png" alt="The White Camp" style="height: 20vh; width: auto;"><br>
+                    <span>Camp address: Merzouga, Maroc</span><br>
+                    <span>Agence address:Azli, Marrakech, Maroc</span><br>
+                    <span>Phone: +212 661-873469</span><br>
+                    <span>Email: <a href="mailto:Thewhitecamp.contact@gmail.com">Thewhitecamp.contact@gmail.com</a></span><br>
+                    <span>Website: <a href="http://www.Thewhitecamp.Com/">www.Thewhitecamp.Com/</a></span>
+                </div>
+                <div class="col-md-4 text-md-left" id="quick">
+                    <h5>QUICK LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="luxuarytentes.html">Luxury Tents</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-left" id="quick">
+                    <i class="material-icons">place</i>
+                    <span>Erg Chebbi, Merzouga; Morocco</span><br>
+                    <i class="material-icons">phone</i>
+                    <span>+212 661-873469</span><br>
+                    <i class="material-icons">email</i>
+                    <span><a href="mailto:Thewhitecamp.contact@gmail.com">Thewhitecamp.contact@gmail.com</a></span><br>
+                    <i class="material-icons">language</i>
+                    <span>Language: English, Spanish, French</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

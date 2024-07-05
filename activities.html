@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentes de Luxe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Lien vers Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+        }
+
+        .language-selector {
+            display: flex;
+            gap: 10px;
+        }
+
+        .language-flag img:hover {
+            transform: scale(1.1);
+        }
+
+        .main-title {
+            text-align: center;
+            margin: 4vh 0;
+            font-size: 36px;
+            font-weight: bold;
+            color: #212529;
+        }
+
+        .activity-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img-top {
+            height: 200px;
+            /* Adjust height as needed */
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .card-body {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #212529;
+            text-align: center;
+        }
+
+        .card-price {
+            font-size: 18px;
+            color: #ffc107;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .card-price span {
+            font-size: 14px;
+            color: #6c757d;
+            font-weight: normal;
+        }
+
+        .card-text {
+            color: #6c757d;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            flex: 1;
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            margin-top: auto;
+        }
+
+        .btn-warning:hover {
+            background-color: #e0a800;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 30px 0;
+            font-size: 14px;
+            margin-top: 50px;
+        }
+
+        footer .footer-info span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        footer .list-unstyled li {
+            margin-bottom: 5px;
+        }
+
+        footer .material-icons {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .footer-info {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="header-contact">
+            <!-- Informations de contact -->
+            <div class="contact-info">
+                <!-- Material Icons for phone -->
+                <div style="display: flex; flex-wrap: nowrap;" id="header1">
+                    <a href="tel:+212661873469"
+                        style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="material-icons">phone</i> +212 661-873469
+                    </a>
+                    <!-- Material Icons for email -->
+                    <a href="mailto:Thewhitecamp.contact@gmail.com"
+                        style="display: flex; align-items: center; justify-content: space-evenly;">
+                        <i class="material-icons">email</i> Thewhitecamp.contact@gmail.com
+                    </a>
+                </div>
+            </div>
+            <div class="language-selector">
+                <!-- Sélecteur de langue -->
+                <a href="#" class="language-flag">
+                    <img src="https://flagcdn.com/w320/gb.png" alt="English">
+                </a>
+                <a href="#" class="language-flag">
+                    <img src="https://flagcdn.com/w320/es.png" alt="Spanish">
+                </a>
+                <a href="#" class="language-flag">
+                    <img src="https://flagcdn.com/w320/fr.png" alt="French">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logofinal.png" alt="The White Camp"
+                    style="height: 20vh; width: auto;margin-top: 2.5vh;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto" style="color: white;">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#about">À propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="luxuarytentes.html">Tentes de luxe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="activities.html">Activités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="gallery.html">Galerie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="contactus.html">Nous contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="main-title">Activités à Merzouga</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="activity-card">
+                    <img src="image/quad-and-buggy.jpg" alt="Randonnée en quad à Merzouga" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Quad à Merzouga</h5>
+                        <p class="card-price">600 MAD / 550 EUR par personne</p>
+                        <p class="card-text">
+                            Explorez les dunes de Merzouga en quad pour une expérience magique. Profitez des dunes de
+                            sable et passez la nuit dans un camp à Merzouga.
+                        </p>
+                        <a href="contactus.html" class="btn btn-warning">Réserver une activité</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="activity-card">
+                    <img src="image/merzouga-camel-ride.jpg" alt="Balade à dos de chameau à Merzouga"
+                        class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Balade à dos de chameau à Merzouga</h5>
+                        <p class="card-price">400 MAD / 365 EUR par personne</p>
+                        <p class="card-text">
+                            Baladez-vous à dos de chameau à Merzouga au coucher du soleil. Profitez de la vue
+                            panoramique depuis les dunes d'Erg Chebbi.
+                        </p>
+                        <a href="contactus.html" class="btn btn-warning">Réserver une activité</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+                <div class="activity-card">
+                    <img src="image/merzouga-tour-by-4x4.jpg" alt="Visite en 4x4 à Merzouga" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Merzouga 4x4 Tour</h5>
+                        <p class="card-price">800 MAD / 730 EUR par personne</p>
+                        <p class="card-text">
+                            Découvrez Merzouga en 4x4 avec notre visite guidée. Traversez les dunes et explorez les
+                            paysages spectaculaires de cette région fascinante.
+                        </p>
+                        <a href="contactus.html" class="btn btn-warning">Réserver une activité</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="activity-card">
+                    <img src="image/sand-bording.jpg" alt="Sandboarding à Merzouga" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Merzouga Sand-bording</h5>
+                        <p class="card-price">300 MAD / 275 EUR par personne</p>
+                        <p class="card-text">
+                            Le sandboarding est un sport similaire au snowboard mais il se pratique sur le sable fin du
+                            désert. C'est une activité récréative et se déroule sur des dunes de sable au lieu de
+                            montagnes enneigées. Ce sport a des adeptes dans le monde entier, il est fréquemment
+                            pratiqué dans des zones désertiques ou des zones côtières sur les dunes de la plage. Une
+                            planche de snowboard est nécessaire et il suffit de glisser sur le sable d'une dune monté
+                            sur la planche avec les deux pieds attachés à celle-ci, bien que certaines personnes le
+                            pratiquent sans être attachées à la planche. Il est moins populaire que le snowboard, en
+                            partie parce qu'il est très difficile de construire un funiculaire sur une dune de sable
+                            pour
+                            revenir en haut de la dune et il faut le faire à pied. Pour pratiquer cette activité, ils
+                            auront un guide local expérimenté.
+                        </p>
+                        <a href="contactus.html" class="btn btn-warning">Réserver une activité</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="activity-card">
+                    <img src="image/image14.jpeg" alt="Sandboarding à Merzouga" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Organisation des événements</h5>
+                        <p class="card-price">4000 MAD / 3650 EUR par personne</p>
+                        <p class="card-text">
+                            Au White Camp, nous vous offrons l'endroit parfait pour des événements inoubliables dans le
+                            désert de Merzouga. Que ce soit pour un mariage, un anniversaire ou une réunion spéciale,
+                            laissez-nous créer une expérience unique sous les étoiles du Sahara.
+                        </p>
+                        <a href="contactus.html" class="btn btn-warning">Réserver une activité</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-left">
+                    <img src="logofinal.png" alt="The White Camp" style="height: 20vh; width: auto;"><br>
+                    <span>Camp address: Merzouga, Maroc</span><br>
+                    <span>Agence address:Azli, Marrakech, Maroc</span><br>
+                    <span>Phone: +212 661-873469</span><br>
+                    <span>Email: <a
+                            href="mailto:Thewhitecamp.contact@gmail.com">Thewhitecamp.contact@gmail.com</a></span><br>
+                    <span>Website: <a href="http://www.Thewhitecamp.Com/">www.Thewhitecamp.Com/</a></span>
+                </div>
+                <div class="col-md-4 text-md-left" id="quick">
+                    <h5>QUICK LINKS</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About Us</a></li>
+                        <li><a href="luxuarytentes.html">Luxury Tents</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-left" id="quick">
+                    <i class="material-icons">place</i>
+                    <span>Erg Chebbi, Merzouga; Morocco</span><br>
+                    <i class="material-icons">phone</i>
+                    <span>+212 661-873469</span><br>
+                    <i class="material-icons">email</i>
+                    <span><a href="mailto:Thewhitecamp.contact@gmail.com">Thewhitecamp.contact@gmail.com</a></span><br>
+                    <i class="material-icons">language</i>
+                    <span>Language: English, Spanish, French</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
